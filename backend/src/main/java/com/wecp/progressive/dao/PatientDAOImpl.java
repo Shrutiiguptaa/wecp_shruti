@@ -1,10 +1,5 @@
 package com.wecp.progressive.dao;
 
-<<<<<<< HEAD
-public class PatientDAOImpl {
-
-}
-=======
 import java.sql.Statement;
 import java.sql.Connection;
 import java.sql.Date;
@@ -135,4 +130,3 @@ public class PatientDAOImpl implements PatientDAO {
     }
 
 }
->>>>>>> cedb17acc917b7b4add85082e1d1308d51284ab6
