@@ -1,9 +1,5 @@
 package com.wecp.progressive.entity;
 
-<<<<<<< HEAD
-public class Doctor {
-
-=======
 import java.util.Comparator;
 
 public class Doctor implements Comparable<Doctor> {
@@ -83,5 +79,4 @@ public class Doctor implements Comparable<Doctor> {
     }
 
     
->>>>>>> cedb17acc917b7b4add85082e1d1308d51284ab6
 }

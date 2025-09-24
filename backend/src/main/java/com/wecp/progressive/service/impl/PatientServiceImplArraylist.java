@@ -1,8 +1,5 @@
 package com.wecp.progressive.service.impl;
 
-<<<<<<< HEAD
-public class PatientServiceImplArraylist  {
-=======
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
@@ -49,6 +46,5 @@ public class PatientServiceImplArraylist implements PatientService {
     }
 
  
->>>>>>> cedb17acc917b7b4add85082e1d1308d51284ab6
 
 }

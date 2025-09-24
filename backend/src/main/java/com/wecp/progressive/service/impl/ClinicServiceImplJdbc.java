@@ -1,8 +1,5 @@
 package com.wecp.progressive.service.impl;
 
-<<<<<<< HEAD
-public class ClinicServiceImplJdbc  {
-=======
 import java.sql.SQLException;
 import java.util.List;
 
@@ -47,6 +44,5 @@ public class ClinicServiceImplJdbc implements ClinicService  {
         // TODO Auto-generated method stub
         
     }
->>>>>>> cedb17acc917b7b4add85082e1d1308d51284ab6
 
 }

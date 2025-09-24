@@ -1,8 +1,5 @@
 package com.wecp.progressive.service.impl;
 
-<<<<<<< HEAD
-public class DoctorServiceImplArraylist  {
-=======
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
@@ -46,6 +43,5 @@ public class DoctorServiceImplArraylist implements DoctorService  {
         sortedDoctors.sort(Comparator.comparing(Doctor::getYearsOfExperience));
         return sortedDoctors;
     }
->>>>>>> cedb17acc917b7b4add85082e1d1308d51284ab6
 
 }

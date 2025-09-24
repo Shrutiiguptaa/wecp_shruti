@@ -1,9 +1,5 @@
 package com.wecp.progressive.entity;
 
-<<<<<<< HEAD
-public class Clinic {
-
-=======
 
 public class Clinic {
 
@@ -76,5 +72,4 @@ public class Clinic {
     }
 
     
->>>>>>> cedb17acc917b7b4add85082e1d1308d51284ab6
 }

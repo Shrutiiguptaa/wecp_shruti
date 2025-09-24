@@ -1,8 +1,5 @@
 package com.wecp.progressive.service.impl;
 
-<<<<<<< HEAD
-public class DoctorServiceImplJdbc  {
-=======
 import java.util.List;
 
 import com.wecp.progressive.dao.DoctorDAO;
@@ -59,6 +56,5 @@ public class DoctorServiceImplJdbc implements DoctorService  {
         // TODO Auto-generated method stub
         // DoctorService.super.updateDoctor(doctor);
     }
->>>>>>> cedb17acc917b7b4add85082e1d1308d51284ab6
 
 }
