@@ -18,12 +18,17 @@ public class PatientServiceImplArraylist implements PatientService {
     private static List<Patient> patientList = new ArrayList<>();
 
     @Override
+<<<<<<< HEAD
     public void emptyArrayList() {
+=======
+    public void emptyArrayList(){
+>>>>>>> bfc45e61ecaa78265aee29eb79e3d689dda129d2
         patientList = new ArrayList<>();
     }
 
     @Override
     public Integer addPatient(Patient patient) {
+<<<<<<< HEAD
 
         // patientList.add(patient);
         // return patientList.size();
@@ -59,11 +64,47 @@ public class PatientServiceImplArraylist implements PatientService {
     public List<Patient> getAllPatients()  {
         // return patientList;
         return new ArrayList<>(patientList);
+=======
+        patientList.add(patient);
+        return patientList.size();
+    }
+
+    @Override
+    public List<Patient> getAllPatientSortedByName() {
+        // Collections.sort(patientList);
+        // return patientList;
+        List<Patient> sortedLst = patientList;
+        // Comparator<Patient> comp = new Comparator<Patient>() {
+        //     @Override
+        //     public int compare(Patient p1, Patient p2) {
+        //         return p1.getFullName().compareTo(p2.getFullName());
+        //     }
+        // };
+        sortedLst.sort(Comparator.comparing(Patient::getFullName));
+        // sortedLst.sort(comp);
+        return sortedLst;
+    }
+
+    @Override
+    public List<Patient> getAllPatients() {
+        return patientList;
+>>>>>>> bfc45e61ecaa78265aee29eb79e3d689dda129d2
     }
 
     @Override
     public Patient getPatientById(int patientId){
+<<<<<<< HEAD
         return patientList.stream().filter(p-> p.getPatientId() == patientId).findFirst().orElse(null);
+=======
+        Iterator<Patient> it = patientList.iterator();
+        while(it.hasNext()){
+            Patient p = it.next();
+            if(p.getPatientId() == patientId){
+                return p;
+            }
+        }
+        return null;
+>>>>>>> bfc45e61ecaa78265aee29eb79e3d689dda129d2
     }
 
 }

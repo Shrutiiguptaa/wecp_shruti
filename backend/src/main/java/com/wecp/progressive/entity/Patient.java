@@ -1,17 +1,29 @@
 package com.wecp.progressive.entity;
 import java.util.Date;
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> bfc45e61ecaa78265aee29eb79e3d689dda129d2
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
+<<<<<<< HEAD
 public class Patient implements Comparable<Patient> {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer patientId;
+=======
+public class Patient implements Comparable<Patient> {  
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private int patientId;
+>>>>>>> bfc45e61ecaa78265aee29eb79e3d689dda129d2
     
     private String fullName;
     private Date dateOfBirth;
@@ -21,8 +33,13 @@ public class Patient implements Comparable<Patient> {
 
     public Patient() {
     }
+<<<<<<< HEAD
     
     public Patient(Integer patientId, String fullName, Date dateOfBirth, String contactNumber, String email,
+=======
+
+    public Patient(int patientId, String fullName, Date dateOfBirth, String contactNumber, String email,
+>>>>>>> bfc45e61ecaa78265aee29eb79e3d689dda129d2
             String address) {
         this.patientId = patientId;
         this.fullName = fullName;
@@ -32,11 +49,19 @@ public class Patient implements Comparable<Patient> {
         this.address = address;
     }
 
+<<<<<<< HEAD
     public Integer getPatientId() {
         return patientId;
     }
 
     public void setPatientId(Integer patientId) {
+=======
+    public int getPatientId() {
+        return patientId;
+    }
+
+    public void setPatientId(int patientId) {
+>>>>>>> bfc45e61ecaa78265aee29eb79e3d689dda129d2
         this.patientId = patientId;
     }
 
@@ -83,5 +108,10 @@ public class Patient implements Comparable<Patient> {
     @Override
     public int compareTo(Patient o) {
         return this.getFullName().compareTo(o.getFullName());
+<<<<<<< HEAD
     }    
+=======
+    }
+
+>>>>>>> bfc45e61ecaa78265aee29eb79e3d689dda129d2
 }

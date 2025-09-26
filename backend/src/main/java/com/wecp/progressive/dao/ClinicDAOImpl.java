@@ -1,5 +1,6 @@
 package com.wecp.progressive.dao;
 
+<<<<<<< HEAD
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -10,11 +11,18 @@ import java.util.List;
 import com.wecp.progressive.config.DatabaseConnectionManager;
 import com.wecp.progressive.entity.Clinic;
 import com.wecp.progressive.entity.Doctor;
+=======
+import java.sql.SQLException;
+import java.util.List;
+
+import com.wecp.progressive.entity.Clinic;
+>>>>>>> bfc45e61ecaa78265aee29eb79e3d689dda129d2
 
 public class ClinicDAOImpl implements ClinicDAO {
 
     @Override
     public int addClinic(Clinic clinic) throws SQLException {
+<<<<<<< HEAD
         String query = "insert into clinic(clinic_name, location, doctor_id, contact_number, established_year) values(?, ?, ?, ?, ?)";
 
         try {
@@ -54,10 +62,21 @@ public class ClinicDAOImpl implements ClinicDAO {
         catch(SQLException e){
             e.printStackTrace();
         }
+=======
+        // TODO Auto-generated method stub
+        return -1;
+    }
+
+    @Override
+    public void deleteClinic(int clinicId) throws SQLException {
+        // TODO Auto-generated method stub
+        
+>>>>>>> bfc45e61ecaa78265aee29eb79e3d689dda129d2
     }
 
     @Override
     public List<Clinic> getAllClinics() throws SQLException {
+<<<<<<< HEAD
         String query = "select * from clinic";
         List<Clinic> clinics = new ArrayList<>();
         try (Statement ps = DatabaseConnectionManager.getConnection().createStatement()) {
@@ -67,10 +86,15 @@ public class ClinicDAOImpl implements ClinicDAO {
             }
         }
         return clinics;
+=======
+        // TODO Auto-generated method stub
+        return List.of();
+>>>>>>> bfc45e61ecaa78265aee29eb79e3d689dda129d2
     }
 
     @Override
     public Clinic getClinicById(int clinicId) throws SQLException {
+<<<<<<< HEAD
         String query = "select * from clinic where clinic_id = ?";
 
         try(PreparedStatement ps = DatabaseConnectionManager.getConnection().prepareStatement(query)){
@@ -80,11 +104,15 @@ public class ClinicDAOImpl implements ClinicDAO {
                 return mapper(rs);
             }
         }
+=======
+        // TODO Auto-generated method stub
+>>>>>>> bfc45e61ecaa78265aee29eb79e3d689dda129d2
         return null;
     }
 
     @Override
     public void updateClinic(Clinic clinic) throws SQLException {
+<<<<<<< HEAD
         String query = "update clinic set clinic_name = ?, location = ?, doctor_id = ?, contact_number = ?, established_year = ? where clinic_id = ?";
         try (PreparedStatement ps = DatabaseConnectionManager.getConnection().prepareStatement(query)) {
             ps.setString(1, clinic.getClinicName());
@@ -107,6 +135,10 @@ public class ClinicDAOImpl implements ClinicDAO {
         c.setContactNumber(rs.getString("contact_number"));
         c.setEstablishedYear(rs.getInt("established_year"));
         return c;
+=======
+        // TODO Auto-generated method stub
+        
+>>>>>>> bfc45e61ecaa78265aee29eb79e3d689dda129d2
     }
 
 }

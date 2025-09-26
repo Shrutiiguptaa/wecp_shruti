@@ -1,5 +1,6 @@
 package com.wecp.progressive.exception;
 
+<<<<<<< HEAD
 import java.sql.SQLException;
 
 import org.springframework.http.HttpStatus;
@@ -18,4 +19,7 @@ public class PatientNotFoundException extends RuntimeException {
     public ResponseEntity<String> handleException(SQLException e) {
     return new ResponseEntity<>("Patient not found", HttpStatus.INTERNAL_SERVER_ERROR);
     }
+=======
+public class PatientNotFoundException {
+>>>>>>> bfc45e61ecaa78265aee29eb79e3d689dda129d2
 }

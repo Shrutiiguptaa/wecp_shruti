@@ -1,7 +1,10 @@
 package com.wecp.progressive.service.impl;
 
+<<<<<<< HEAD
 import java.sql.SQLException;
 import java.util.ArrayList;
+=======
+>>>>>>> bfc45e61ecaa78265aee29eb79e3d689dda129d2
 import java.util.List;
 
 import com.wecp.progressive.dao.DoctorDAO;
@@ -17,6 +20,7 @@ public class DoctorServiceImplJdbc implements DoctorService  {
     }
 
     @Override
+<<<<<<< HEAD
     public Integer addDoctor(Doctor doctor) throws SQLException{
         // System.out.println("Inside the doctor service-1");
         return doctorDAO.addDoctor(doctor);
@@ -41,6 +45,17 @@ public class DoctorServiceImplJdbc implements DoctorService  {
         //     e.printStackTrace();
         // }
         
+=======
+    public Integer addDoctor(Doctor doctor) {
+        // TODO Auto-generated method stub
+        return -1;
+    }
+
+    @Override
+    public void deleteDoctor(int doctorId) {
+        // TODO Auto-generated method stub
+        // DoctorService.super.deleteDoctor(doctorId);
+>>>>>>> bfc45e61ecaa78265aee29eb79e3d689dda129d2
     }
 
     @Override
@@ -50,6 +65,7 @@ public class DoctorServiceImplJdbc implements DoctorService  {
     }
 
     @Override
+<<<<<<< HEAD
     public List<Doctor> getAllDoctors() throws SQLException{
         List<Doctor> list = new ArrayList<>();
         list = doctorDAO.getAllDoctors();
@@ -93,6 +109,30 @@ public class DoctorServiceImplJdbc implements DoctorService  {
         //     e.printStackTrace();
         // }
         
+=======
+    public List<Doctor> getAllDoctors() {
+        // TODO Auto-generated method stub
+        return List.of();
+    }
+
+    @Override
+    public Doctor getDoctorById(int doctorId) {
+        // TODO Auto-generated method stub
+        // return DoctorService.super.getDoctorById(doctorId);
+        return null;
+    }
+
+    @Override
+    public List<Doctor> getDoctorSortedByExperience() {
+        // TODO Auto-generated method stub
+        return List.of();
+    }
+
+    @Override
+    public void updateDoctor(Doctor doctor) {
+        // TODO Auto-generated method stub
+        // DoctorService.super.updateDoctor(doctor);
+>>>>>>> bfc45e61ecaa78265aee29eb79e3d689dda129d2
     }
 
 }

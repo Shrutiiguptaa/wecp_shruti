@@ -1,21 +1,33 @@
 package com.wecp.progressive.service.impl;
 
+<<<<<<< HEAD
 import java.sql.SQLException;
+=======
+>>>>>>> bfc45e61ecaa78265aee29eb79e3d689dda129d2
 import java.util.List;
 
 import com.wecp.progressive.dao.PatientDAO;
 import com.wecp.progressive.entity.Patient;
 import com.wecp.progressive.service.PatientService;
 
+<<<<<<< HEAD
 public class PatientServiceImplJdbc implements PatientService {
 
     private PatientDAO patientDAO;
 
     public PatientServiceImplJdbc(PatientDAO patientDAO) {
+=======
+public class PatientServiceImplJdbc implements PatientService  {
+
+    private PatientDAO patientDAO;
+
+    public PatientServiceImplJdbc(PatientDAO patientDAO){
+>>>>>>> bfc45e61ecaa78265aee29eb79e3d689dda129d2
         this.patientDAO = patientDAO;
     }
 
     @Override
+<<<<<<< HEAD
     public Integer addPatient(Patient patient) throws SQLException {
         Integer id = patientDAO.addPatient(patient);
         return id;
@@ -39,6 +51,17 @@ public class PatientServiceImplJdbc implements PatientService {
             e.printStackTrace();
         }
 
+=======
+    public Integer addPatient(Patient patient) {
+        // TODO Auto-generated method stub
+        return -1;
+    }
+
+    @Override
+    public void deletePatient(int patientId) {
+        // TODO Auto-generated method stub
+        // PatientService.super.deletePatient(patientId);
+>>>>>>> bfc45e61ecaa78265aee29eb79e3d689dda129d2
     }
 
     @Override
@@ -48,6 +71,7 @@ public class PatientServiceImplJdbc implements PatientService {
     }
 
     @Override
+<<<<<<< HEAD
     public List<Patient> getAllPatientSortedByName() throws SQLException {
         return patientDAO.getAllPatientsSortedByName();
     }
@@ -95,4 +119,30 @@ public class PatientServiceImplJdbc implements PatientService {
         // }
     }
 
+=======
+    public List<Patient> getAllPatientSortedByName() {
+        // TODO Auto-generated method stub
+        return List.of();
+    }
+
+    @Override
+    public List<Patient> getAllPatients() {
+        // TODO Auto-generated method stub
+        return List.of();
+    }
+
+    @Override
+    public Patient getPatientById(int patientId) {
+        // TODO Auto-generated method stub
+        // return PatientService.super.getPatientById(patientId);
+        return null;
+    }
+
+    @Override
+    public void updatePatient(Patient patient) {
+        // TODO Auto-generated method stub
+        // PatientService.super.updatePatient(patient);
+    }
+    
+>>>>>>> bfc45e61ecaa78265aee29eb79e3d689dda129d2
 }

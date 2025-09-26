@@ -1,5 +1,6 @@
 package com.wecp.progressive.dao;
 
+<<<<<<< HEAD
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -10,10 +11,17 @@ import java.util.List;
 import com.wecp.progressive.config.DatabaseConnectionManager;
 import com.wecp.progressive.entity.Doctor;
 import com.wecp.progressive.entity.Patient;
+=======
+import java.sql.SQLException;
+import java.util.List;
+
+import com.wecp.progressive.entity.Doctor;
+>>>>>>> bfc45e61ecaa78265aee29eb79e3d689dda129d2
 
 public class DoctorDAOImpl implements DoctorDAO {
 
     @Override
+<<<<<<< HEAD
     public int addDoctor(Doctor doctor) {
         String query = "insert into doctor(full_name, specialty, contact_number, email, years_of_experience) values(?, ?, ?, ?, ?)";
 
@@ -38,11 +46,16 @@ public class DoctorDAOImpl implements DoctorDAO {
         } catch (SQLException e) {
             e.printStackTrace();
         }
+=======
+    public int addDoctor(Doctor doctor) throws SQLException {
+        // TODO Auto-generated method stub
+>>>>>>> bfc45e61ecaa78265aee29eb79e3d689dda129d2
         return -1;
     }
 
     @Override
     public void deleteDoctor(int doctorId) throws SQLException {
+<<<<<<< HEAD
         String query = "delete from doctor where doctor_id = ?";
 
         try {
@@ -54,10 +67,15 @@ public class DoctorDAOImpl implements DoctorDAO {
             e.printStackTrace();
         }
 
+=======
+        // TODO Auto-generated method stub
+        
+>>>>>>> bfc45e61ecaa78265aee29eb79e3d689dda129d2
     }
 
     @Override
     public List<Doctor> getAllDoctors() throws SQLException {
+<<<<<<< HEAD
         String query = "select * from doctor";
         List<Doctor> doctors = new ArrayList<>();
         try {
@@ -71,10 +89,15 @@ public class DoctorDAOImpl implements DoctorDAO {
             e.printStackTrace();
         }
         return doctors;
+=======
+        // TODO Auto-generated method stub
+        return List.of();
+>>>>>>> bfc45e61ecaa78265aee29eb79e3d689dda129d2
     }
 
     @Override
     public Doctor getDoctorById(int doctorId) throws SQLException {
+<<<<<<< HEAD
         String query = "select * from doctor where doctor_id = ?";
 
         try {
@@ -88,11 +111,15 @@ public class DoctorDAOImpl implements DoctorDAO {
         catch(SQLException e){
             e.printStackTrace();
         }
+=======
+        // TODO Auto-generated method stub
+>>>>>>> bfc45e61ecaa78265aee29eb79e3d689dda129d2
         return null;
     }
 
     @Override
     public void updateDoctor(Doctor doctor) throws SQLException {
+<<<<<<< HEAD
         String query = "update doctor set full_name = ?, specialty = ?, contact_number = ?, email = ?, years_of_experience = ? where doctor_id = ?";
 
         try {
@@ -144,3 +171,12 @@ public class DoctorDAOImpl implements DoctorDAO {
     }
 
 }
+=======
+        // TODO Auto-generated method stub
+        
+    }
+
+
+
+}
+>>>>>>> bfc45e61ecaa78265aee29eb79e3d689dda129d2

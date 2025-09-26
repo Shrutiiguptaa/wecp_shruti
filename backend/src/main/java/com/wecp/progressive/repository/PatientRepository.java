@@ -1,5 +1,6 @@
 package com.wecp.progressive.repository;
 
+<<<<<<< HEAD
 import java.util.Optional;
 
 import org.springframework.data.jpa.repository.JpaRepository;
@@ -20,3 +21,8 @@ public interface PatientRepository extends JpaRepository<Patient, Integer> {
     @Query("SELECT p FROM Patient p ORDER BY p.fullName ASC")
     List<Patient> getAllPatientSortedByName();
 }
+=======
+
+public interface PatientRepository {
+}
+>>>>>>> bfc45e61ecaa78265aee29eb79e3d689dda129d2

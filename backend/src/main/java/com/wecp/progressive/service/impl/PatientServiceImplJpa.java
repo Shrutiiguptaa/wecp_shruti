@@ -1,5 +1,6 @@
 package com.wecp.progressive.service.impl;
 
+<<<<<<< HEAD
 import java.util.List;
 import java.util.Optional;
 import java.sql.SQLException;
@@ -82,5 +83,8 @@ public class PatientServiceImplJpa implements PatientService {
     // // TODO Auto-generated method stub
     // PatientService.super.modifyPatientDetails(patientDTO);
     // }
+=======
+public class PatientServiceImplJpa  {
+>>>>>>> bfc45e61ecaa78265aee29eb79e3d689dda129d2
 
 }

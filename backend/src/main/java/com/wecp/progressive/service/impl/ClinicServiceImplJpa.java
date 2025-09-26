@@ -1,5 +1,6 @@
 package com.wecp.progressive.service.impl;
 
+<<<<<<< HEAD
 import java.util.List;
 import java.sql.SQLException;
 
@@ -61,4 +62,8 @@ public class ClinicServiceImplJpa implements ClinicService {
     }
 
     
+=======
+public class ClinicServiceImplJpa  {
+
+>>>>>>> bfc45e61ecaa78265aee29eb79e3d689dda129d2
 }
